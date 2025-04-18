@@ -1,17 +1,141 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Nikhil | Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
+  <title>Nikhil Nagpal | Portfolio</title>
+  <style>
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    background: linear-gradient(145deg, #1e1e2f, #282838);
+    color: #fff;
+  }
+  header {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    padding: 40px 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .profile-pic {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+    border: 3px solid #fff;
+    transition: transform 0.4s ease;
+  }
+  .profile-pic:hover {
+    transform: scale(1.05) rotate(-2deg);
+  }
+  nav {
+    margin-top: 10px;
+  }
+  nav a {
+    color: #90caf9;
+    text-decoration: none;
+    margin: 0 10px;
+    transition: all 0.3s ease;
+  }
+  nav a:hover {
+    color: #ff4f4f;
+    text-shadow: none;
+  }
+  section {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(12px);
+    padding: 30px 20px;
+    max-width: 900px;
+    margin: 30px auto;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  
+  }
+  h2 {
+    color: #90caf9;
+    margin-bottom: 15px;
+  }
+  .links a {
+    display: inline-block;
+    margin: 5px 10px;
+    color: #64b5f6;
+    text-decoration: none;
+    transition: all 0.3s ease;
+  }
+  .links a:hover {
+    color: #ff7043;
+    transform: translateY(-2px) scale(1.05);
+    text-decoration: underline;
+  }
+  .project {
+    margin: 15px 0;
+    cursor: pointer;
+  }
+  
+  .project h3 {
+    color: #ffffff;
+    margin-bottom: 5px;
+  }
+  .project p,
+  .project a {
+    color: #cccccc;
+  }
+  .testimonial {
+    border-left: 4px solid #90caf9;
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 4px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+  }
+  .testimonial:hover {
+    transform: scale(1.02);
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+  #testimonials blockquote {
+    font-style: italic;
+    margin: 0 0 10px;
+    color: #e0e0e0;
+  }
+  #testimonials cite {
+    display: block;
+    text-align: right;
+    font-size: 0.9em;
+    color: #bbbbbb;
+  }
+  footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9em;
+    color: #aaa;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(8px);
+  }
+</style>
+<script src="https://cdn.jsdelivr.net/npm/tsparticles@3.3.0/tsparticles.bundle.min.js"></script>
+<style>
+  #tsparticles {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+  }
+</style>
 </head>
 <body>
-  <header class="header">
+<div id="tsparticles"></div>
+
+  <header>
     <img src="profile.jpg" alt="Nikhil Nagpal" class="profile-pic" />
     <h1>Nikhil Nagpal</h1>
-    <p class="tagline">Full Stack & Android Developer | Freelancer | Problem Solver</p>
+    <p>Full Stack & Android Developer | Freelancer | Problem Solver</p>
     <nav>
       <a href="#about">About</a>
       <a href="#testimonials">Testimonials</a>
@@ -20,53 +144,53 @@
     </nav>
   </header>
 
-  <main>
-    <section id="about">
-      <h2>About Me</h2>
-      <p>I'm a passionate full stack developer with a strong focus on Android development for the past 4+ years. Over the last 8 years, I've worked on a variety of technologies including Java, Kotlin, PHP, HTML, CSS, JavaScript, WordPress, MySQL, SQLite, Laravel, web scraping, and even Chrome extensions.</p>
-      <p>I'm currently focused on building meaningful Android applications, but my diverse background enables me to handle end-to-end development tasks. I value clean design, efficient code, and delivering high-quality user experiences. Beyond coding, I find that playing chess sharpens my focus and strategic thinking—skills I bring into every project I take on.</p>
-    </section>
+  <section id="about">
+    <h2>About Me</h2>
+    <p>I'm a passionate full stack developer with a strong focus on Android development for the past 4+ years. Over the last 8 years, I've worked on a variety of technologies including Java, Kotlin, PHP, HTML, CSS, JavaScript, WordPress, MySQL, SQLite, Laravel, web scraping, and even Chrome extensions.</p>
+    <p>I'm currently focused on building meaningful Android applications, but my diverse background enables me to handle end-to-end development tasks. I value clean design, efficient code, and delivering high-quality user experiences. Beyond coding, I find that playing chess sharpens my focus and strategic thinking—skills I bring into every project I take on.</p>
+  </section>
 
-    <section id="testimonials">
-      <h2>What Clients Say</h2>
-      <div class="testimonial">
-        <blockquote>"Nikhil exceeded expectations—fast turnaround, excellent communication, and top-quality work."</blockquote>
-        <cite>— Fiverr Client</cite>
-      </div>
-      <div class="testimonial">
-        <blockquote>"Professional, skilled, and delivered ahead of schedule. Highly recommend!"</blockquote>
-        <cite>— Upwork Client</cite>
-      </div>
-    </section>
+  <section id="testimonials">
+    <h2>What Clients Say</h2>
+    <div class="testimonial">
+      <blockquote>"Nikhil exceeded expectations—fast turnaround, excellent communication, and top-quality work."</blockquote>
+      <cite>— Fiverr Client</cite>
+    </div>
+    <div class="testimonial">
+      <blockquote>"Professional, skilled, and delivered ahead of schedule. Highly recommend!"</blockquote>
+      <cite>— Upwork Client</cite>
+    </div>
+  </section>
 
-    <section id="projects">
-      <h2>Projects</h2>
-      <div class="project">
-        <h3>Chessis</h3>
-        <p>An Android chess app to help players improve by analyzing games. Rated 4.5+ with over 100k downloads.</p>
-        <a href="https://play.google.com/store/apps/details?id=com.chessimprovement.chessis" target="_blank">View on Google Play</a>
-      </div>
-      <div class="project">
-        <h3>Chess Alarm</h3>
-        <p>An alarm app requiring chess puzzles to dismiss—blend of productivity and chess training.</p>
-        <a href="https://play.google.com/store/apps/details?id=com.chessalarm&hl=en_IN&gl=US" target="_blank">View on Google Play</a>
-      </div>
-      <div class="project">
-        <h3>Levermann24</h3>
-        <p>A stock rating web app that calculates and visualizes investment scores using data from various sources. Built using PHP, web scraping, and automation tools to provide live analysis and performance reports.</p>
-      </div>
-    </section>
 
-    <section id="contact">
-      <h2>Contact</h2>
-      <div class="links">
-        <a href="mailto:nikhilnagpal123wk@gmail.com">Email</a>
-        <a href="https://www.linkedin.com/in/nikhilnagpal" target="_blank">LinkedIn</a>
-        <a href="https://www.fiverr.com/nikhilnagpal123" target="_blank">Fiverr</a>
-        <a href="https://www.upwork.com/freelancers/~0198f450cb736752fb" target="_blank">Upwork</a>
-      </div>
-    </section>
-  </main>
+<section id="projects">
+  <h2>Projects</h2>
+  <div class="project">
+    <h3>Chessis</h3>
+    <p>An Android chess app to help players improve by analyzing games. Rated 4.5+ with over 100k downloads.</p>
+    <a href="https://play.google.com/store/apps/details?id=com.chessimprovement.chessis" target="_blank">View on Google Play</a>
+  </div>
+  <div class="project">
+    <h3>Chess Alarm</h3>
+    <p>An alarm app requiring chess puzzles to dismiss—blend of productivity and chess training.</p>
+    <a href="https://play.google.com/store/apps/details?id=com.chessalarm&hl=en_IN&gl=US" target="_blank">View on Google Play</a>
+  </div>
+  <div class="project">
+    <h3>Levermann24</h3>
+    <p>A stock rating web app that calculates and visualizes investment scores using data from various sources. Built using PHP, web scraping, and automation tools to provide live analysis and performance reports.</p>
+  </div>
+</section>
+
+<section id="contact">
+    <h2>Contact</h2>
+    <p>Let’s connect:</p>
+    <div class="links">
+      <a href="mailto:nikhilnagpal123wk@gmail.com">Email</a>
+      <a href="https://www.linkedin.com/in/nikhilnagpal" target="_blank">LinkedIn</a>
+      <a href="https://www.fiverr.com/nikhilnagpal123" target="_blank">Fiverr</a>
+      <a href="https://www.upwork.com/freelancers/~0198f450cb736752fb" target="_blank">Upwork</a>
+    </div>
+  </section>
 
   <footer>
     &copy; 2025 Nikhil Nagpal. All rights reserved.
