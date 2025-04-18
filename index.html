@@ -5,139 +5,143 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Nikhil | Portfolio</title>
   <style>
-  body {
-    font-family: 'Segoe UI', sans-serif;
-    margin: 0;
-    background: linear-gradient(145deg, #1e1e2f, #282838);
-    color: #fff;
-  }
-  header {
-    background: rgba(255, 255, 255, 0.05);
-    backdrop-filter: blur(10px);
-    padding: 40px 20px;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .profile-pic {
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
-    object-fit: cover;
-    margin-bottom: 15px;
-    border: 3px solid #fff;
-    transition: transform 0.4s ease;
-  }
-  .profile-pic:hover {
-    transform: scale(1.05) rotate(-2deg);
-  }
-  nav {
-    margin-top: 10px;
-  }
-  nav a {
-    color: #90caf9;
-    text-decoration: none;
-    margin: 0 10px;
-    transition: all 0.3s ease;
-  }
-  nav a:hover {
-    color: #ff4f4f;
-    text-shadow: none;
-  }
-  section {
-    background: rgba(255, 255, 255, 0.05);
-    backdrop-filter: blur(12px);
-    padding: 30px 20px;
-    max-width: 900px;
-    margin: 30px auto;
-    border-radius: 15px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
-  }
-  
-  
-  }
-  h2 {
-    color: #90caf9;
-    margin-bottom: 15px;
-  }
-  .links a {
-    display: inline-block;
-    margin: 5px 10px;
-    color: #64b5f6;
-    text-decoration: none;
-    transition: all 0.3s ease;
-  }
-  .links a:hover {
-    color: #ff7043;
-    transform: translateY(-2px) scale(1.05);
-    text-decoration: underline;
-  }
-  .project {
-    margin: 15px 0;
-    cursor: pointer;
-  }
-  
-  .project h3 {
-    color: #ffffff;
-    margin-bottom: 5px;
-  }
-  .project p,
-  .project a {
-    color: #cccccc;
-  }
-  .testimonial {
-    border-left: 4px solid #90caf9;
-    padding: 15px;
-    background: rgba(255, 255, 255, 0.08);
-    border-radius: 4px;
-    transition: transform 0.3s ease, background-color 0.3s ease;
-  }
-  .testimonial:hover {
-    transform: scale(1.02);
-    background-color: rgba(255, 255, 255, 0.1);
-  }
-  #testimonials blockquote {
-    font-style: italic;
-    margin: 0 0 10px;
-    color: #e0e0e0;
-  }
-  #testimonials cite {
-    display: block;
-    text-align: right;
-    font-size: 0.9em;
-    color: #bbbbbb;
-  }
-  footer {
-    text-align: center;
-    padding: 20px;
-    font-size: 0.9em;
-    color: #aaa;
-    background: rgba(255, 255, 255, 0.05);
-    backdrop-filter: blur(8px);
-  }
-</style>
-<script src="https://cdn.jsdelivr.net/npm/tsparticles@3.3.0/tsparticles.bundle.min.js"></script>
-<style>
-  #tsparticles {
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    width: 100%;
-    height: 100%;
-  }
-</style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      background: linear-gradient(145deg, #1e1e2f, #282838);
+      color: #fff;
+    }
+    header {
+      background: rgba(255, 255, 255, 0.05);
+      backdrop-filter: blur(10px);
+      padding: 40px 20px;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .profile-pic {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 15px;
+      border: 3px solid #fff;
+      transition: transform 0.4s ease;
+    }
+    .profile-pic:hover {
+      transform: scale(1.05) rotate(-2deg);
+    }
+    nav {
+      margin-top: 10px;
+    }
+    nav a {
+      color: #90caf9;
+      text-decoration: none;
+      margin: 0 10px;
+      transition: all 0.3s ease;
+    }
+    nav a:hover {
+      color: #ff4f4f;
+      text-shadow: none;
+    }
+    section {
+      background: rgba(255, 255, 255, 0.05);
+      backdrop-filter: blur(12px);
+      padding: 30px 20px;
+      max-width: 900px;
+      margin: 30px auto;
+      border-radius: 15px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    }
+    h2 {
+      color: #90caf9;
+      margin-bottom: 15px;
+    }
+    .links a {
+      display: inline-block;
+      margin: 5px 10px;
+      color: #64b5f6;
+      text-decoration: none;
+      transition: all 0.3s ease;
+    }
+    .links a:hover {
+      color: #ff7043;
+      transform: translateY(-2px) scale(1.05);
+      text-decoration: underline;
+    }
+    .project {
+      margin: 15px 0;
+      padding: 15px;
+      border-radius: 10px;
+      display: block;
+      text-decoration: none;
+      background-color: rgba(255, 255, 255, 0.04);
+      cursor: default;
+    }
+    .project h3 {
+      color: #ffffff;
+      margin-bottom: 5px;
+    }
+    .project p,
+    .project a {
+      color: #cccccc;
+    }
+    .testimonial {
+      border-left: 4px solid #90caf9;
+      padding: 15px;
+      background: rgba(255, 255, 255, 0.08);
+      border-radius: 4px;
+      transition: transform 0.3s ease, background-color 0.3s ease;
+      margin-left: 10px;
+      display: block;
+      text-decoration: none;
+    }
+    .testimonial:hover {
+      transform: scale(1.02);
+      background-color: rgba(255, 255, 255, 0.1);
+    }
+    #testimonials blockquote {
+      font-style: italic;
+      margin: 0 0 10px;
+      color: #e0e0e0;
+    }
+    #testimonials cite {
+      display: block;
+      text-align: right;
+      font-size: 0.9em;
+      color: #bbbbbb;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9em;
+      color: #aaa;
+      background: rgba(255, 255, 255, 0.05);
+      backdrop-filter: blur(8px);
+    }
+  </style>
+  <script src="https://cdn.jsdelivr.net/npm/tsparticles@3.3.0/tsparticles.bundle.min.js"></script>
+  <style>
+    #tsparticles {
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: -1;
+      width: 100%;
+      height: 100%;
+    }
+  </style>
 </head>
 <body>
 <div id="tsparticles"></div>
-
   <header>
     <img src="profile.jpg" alt="Nikhil Nagpal" class="profile-pic" />
     <h1>Nikhil</h1>
     <p>Full Stack & Android Developer | Freelancer | Problem Solver</p>
     <nav>
       <a href="#about">About</a>
+      <a href="#skills">Skills</a>
       <a href="#testimonials">Testimonials</a>
       <a href="#projects">Projects</a>
       <a href="#contact">Contact</a>
@@ -146,42 +150,85 @@
 
   <section id="about">
     <h2>About Me</h2>
-    <p>I'm a passionate full stack developer with a strong focus on Android development for the past 4+ years. Over the last 8 years, I've worked on a variety of technologies including Java, Kotlin, PHP, HTML, CSS, JavaScript, WordPress, MySQL, SQLite, Laravel, web scraping, and even Chrome extensions.</p>
-    <p>Nikhil is a highly experienced and knowledgeable Javascript expert that was able to quickly create function for google tag manager. Fast, Reliable and Great Communicator!"</p>
+    <p>I’m a software developer with over 8 years of experience, currently specializing in Android development while having strong roots in full stack engineering. I’ve built and delivered a range of scalable applications and platforms using Java, Kotlin, PHP, HTML, CSS, JavaScript, MySQL, WordPress, Laravel, and more. My recent focus has been on building Android apps with clean architecture, smooth UI/UX, and strong performance.</p>
+    <p>With a problem-solving mindset and attention to detail, I aim to build not just software, but intuitive and meaningful digital experiences. I’m proactive, reliable, and value consistent communication to deliver projects with clarity and impact.</p>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <div style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 30px;">
+      <div style="flex: 1; min-width: 250px;">
+        <h3>Mobile Development</h3>
+        <ul style="padding-left: 20px;">
+          <li>Java</li>
+          <li>Kotlin</li>
+          <li>Android Studio</li>
+          <li>Jetpack Compose</li>
+          <li>MVVM / MVC Architecture</li>
+          <li>SQLite / Room DB</li>
+          <li>Firebase / Firestore</li>
+          <li>AdMob / Google Billing</li>
+        </ul>
+      </div>
+      <div style="flex: 1; min-width: 250px;">
+        <h3>Web Development</h3>
+        <ul style="padding-left: 20px;">
+          <li>PHP / Laravel</li>
+          <li>HTML / CSS / JavaScript</li>
+          <li>WordPress / WooCommerce</li>
+          <li>Bootstrap / Responsive Design</li>
+          <li>RESTful APIs</li>
+          <li>JSON / XML Parsing</li>
+        </ul>
+      </div>
+      <div style="flex: 1; min-width: 250px;">
+        <h3>Tools & Platforms</h3>
+        <ul style="padding-left: 20px;">
+          <li>Git & GitHub</li>
+          <li>Chrome Extensions</li>
+          <li>Web Scraping</li>
+          <li>Twitter / Facebook APIs</li>
+          <li>Material Design Guidelines</li>
+          <li>UI/UX Design</li>
+          <li>VS Code / Android Studio</li>
+          <li>Performance Optimization</li>
+          <li>Debugging & Profiling Tools</li>
+        </ul>
+      </div>
+    </div>
   </section>
 
   <section id="testimonials">
     <h2>What Clients Say</h2>
-    <div class="testimonial">
-      <blockquote>"Hands down THE BEST interaction I have EVER had on Fiverr. Seller went above and beyond to ensure the product was exactly what I asked for and that I knew how to use it! From installation to execution, he helped me through it all. Excellent customer experience. I will be going back to this seller for this service every time I need it."</blockquote>
-      <cite>— Fiverr Client</cite>
-    </div>
-    <div class="testimonial">
+    <a href="https://www.upwork.com/freelancers/~0198f450cb736752fb" target="_blank" class="testimonial">
       <blockquote>"Professional, skilled, and delivered ahead of schedule. Highly recommend!"</blockquote>
       <cite>— Upwork Client</cite>
+    </a><br>
+    <a href="https://www.fiverr.com/nikhilnagpal123/create-twitter-and-facebook-api" target="_blank" class="testimonial">
+      <blockquote>"Hands down THE BEST interaction I have EVER had on Fiverr. Seller went above and beyond to ensure the product was exactly what I asked for and that I knew how to use it! From installation to execution, he helped me through it all. Excellent customer experience. I will be going back to this seller for this service every time I need it."</blockquote>
+      <cite>— Fiverr Client</cite>
+    </a>
+    
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="project">
+      <h3>Chessis</h3>
+      <p>An Android chess app to help players improve by analyzing games. Rated 4.5+ with over 1M+ downloads.</p>
+      <a href="https://play.google.com/store/apps/details?id=com.chessimprovement.chessis" target="_blank">View on Google Play</a>
+    </div>
+    <div class="project">
+      <h3>Chess Alarm</h3>
+      <p>An alarm app requiring chess puzzles to dismiss—blend of productivity and chess training.</p>
+    </div>
+    <div class="project">
+      <h3>Levermann24</h3>
+      <p>A stock rating web app that calculates and visualizes investment scores using data from various sources. Built using PHP, web scraping, and automation tools to provide live analysis and performance reports.</p>
     </div>
   </section>
 
-
-<section id="projects">
-  <h2>Projects</h2>
-  <div class="project">
-    <h3>Chessis</h3>
-    <p>An Android chess app to help players improve by analyzing games. Rated 4.5+ with over 1M+ downloads.</p>
-    <a href="https://play.google.com/store/apps/details?id=com.chessimprovement.chessis" target="_blank">View on Google Play</a>
-  </div>
-  <div class="project">
-    <h3>Chess Alarm</h3>
-    <p>An alarm app requiring chess puzzles to dismiss—blend of productivity and chess training.</p>
-    <a href="https://play.google.com/store/apps/details?id=com.chessalarm&hl=en_IN&gl=US" target="_blank">View on Google Play</a>
-  </div>
-  <div class="project">
-    <h3>Levermann24</h3>
-    <p>A stock rating web app that calculates and visualizes investment scores using data from various sources. Built using PHP, web scraping, and automation tools to provide live analysis and performance reports.</p>
-  </div>
-</section>
-
-<section id="contact">
+  <section id="contact">
     <h2>Contact</h2>
     <p>Let’s connect:</p>
     <div class="links">
